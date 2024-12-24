@@ -26,7 +26,9 @@ void readDHT22() {
     }
 }
 void loop() {
-    readDHT22();
+    // readDHT22();
+    temperature++;
+    humidity++;
     Serial.printf("%.1f\t %.1f\n", temperature, humidity);
     delay(1000);
 }
